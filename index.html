@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Lev1_2</title>
+</head>
+
+<body>
+
+    <div>
+        <label for="fn_hallo">1. Function fn_say_itworks()</label>
+        <button onclick="fn_say_itworks()">it works!!!</button>
+        <input id="pItworks" disabled />
+        <button class="clsReset" onclick="fn_reset()">Reset</button>
+    </div>
+
+    <div>
+        <label></label>2. Sum of two numbers</label>
+        <input type="number" id="x"> + <input type="number" id="y"> = <input id="output" disabled>
+        <button
+            onclick="fn_calculate_sum(document.getElementById('x').value , document.getElementById('y').value)">Calculate</button>
+        <input id="result" disabled />
+        <button class="clsReset" onclick="fn_reset()">Reset</button>
+    </div>
+
+    <div>
+        <label>3. Multiplication</label>
+        <input type="number" id="mlp_x"> x <input type="number" id="mlp_y"> = <input id="mlp_output" disabled>
+        <button
+            onclick="fn_calculate_multiplication(document.getElementById('mlp_x').value , document.getElementById('mlp_y').value)">Calculate</button>
+        <input id="mlp_result" disabled />
+        <button class="clsReset" onclick="fn_reset()">Reset</button>
+    </div>
+
+    <div>
+        <label>4. Show data type</label>
+        <input id="dtype_x"> = <input id="dtype_output" palceholder="Data Type" disabled>
+        <button onclick="fn_show_datatype(document.getElementById('dtype_x').value )">Get
+            Datatype</button>
+        <input id="dtype_result" disabled />
+        <button class="clsReset" onclick="fn_reset()">Reset</button>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
