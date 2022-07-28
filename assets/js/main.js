@@ -67,6 +67,20 @@ function fn_show_datatype(x) {
     document.getElementById('dtype_result').value = 'The datatype of ' + x + ' is ' + datatype;
     document.getElementById('dtype_output').value = 'The datatype of ' + x + ' is ' + datatype;
 
+    // Test: i=true; j=”hi”; k=1; l={name:”John”}; a=[0,1]
+
+    let i = true;
+    let j = 'hi';
+    let k = 1;
+    let l = { name: 'John' };
+    let a = [0, 1];
+
+    console.log('The type of i=true is = ' + typeof (i));
+    console.log('The type of j=”hi” is = ' + typeof (j));
+    console.log('The type of k=1 is = ' + typeof (k));
+    console.log('The type of l={name:"John"} is = ' + typeof (l));
+    console.log('The type of let a=[0,1]; is = ' + typeof (a));
+
 }
 
 // Arrow function 
@@ -77,6 +91,21 @@ let arrow_fn_show_datatype = (x) => {
 
     document.getElementById('dtype_result').value = 'The datatype of ' + x + ' is ' + datatype;
     document.getElementById('dtype_output').value = 'The datatype of ' + x + ' is ' + datatype;
+
+    // Test: i=true; j=”hi”; k=1; l={name:”John”}; a=[0,1]
+
+    let i = true;
+    let j = 'hi';
+    let k = 1;
+    let l = { name: 'John' };
+    let a = [0, 1];
+
+    console.log('The type of i=true is = ' + typeof (i));
+    console.log('The type of j=”hi” is = ' + typeof (j));
+    console.log('The type of k=1 is = ' + typeof (k));
+    console.log('The type of l={name:"John"} is = ' + typeof (l));
+    console.log('The type of let a=[0,1]; is = ' + typeof (a));
+
 }
 
 // Reset 
